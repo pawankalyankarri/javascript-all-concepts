@@ -18,8 +18,8 @@ let narr = [56,43,2,68,9,6]
 
         // Numeric sort
 
-let res = narr.sort((a,b)=>a-b)
-console.log(res)
+// let res = narr.sort((a,b)=>a-b)
+// console.log(res)
 
 
 
