@@ -60,4 +60,25 @@ let word = 'hello world'
 // console.log(word.split())   // [ 'hello world' ]
 // console.log(word.split(' '))  // [ 'hello', 'world' ]
 
+// console.log(word)
+//  word = 'hello   world   '
+// let res = word.replace('/\s/g','')
 
+
+// let res = word.match('l')
+// console.log(res)
+
+
+// let res = word.split("").shift()
+// console.log(res)
+
+let arr = [1,23,4,5]
+
+// delete arr[0]
+// console.log(arr)
+
+// let res = arr.copyWithin(2,0,2)
+// console.log(res)
+
+// let res = Array.from(word)
+// console.log(res)
