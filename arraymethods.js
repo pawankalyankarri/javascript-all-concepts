@@ -31,3 +31,30 @@ let arr = ['one',1,'two',2,'three',3,{name:'siva'}]
 // console.log(arr)
 
 
+    //copywithin()   overwrites the existing values.
+
+// console.log(arr)
+// console.log(arr.copyWithin(1,4,5)) // one,three,1,two
+// console.log(arr.copyWithin(arr.length-2,0,3))
+
+
+        //join()
+
+// let res = arr.join('*')
+// console.log(res)
+
+
+        //delete arr[]
+
+// console.log(arr)
+// delete arr[0]
+// console.log(arr)
+// console.log(arr[0])
+
+
+    // arr.splice()
+
+// let res = arr.splice(1,0,'100',200)
+// console.log(res)
+// console.log(arr)
+
