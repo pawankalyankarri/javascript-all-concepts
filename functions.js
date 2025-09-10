@@ -35,3 +35,147 @@
 // }
 // fn()
 
+
+                // function invocations
+
+// let obj = {
+//         firstName : 'john',
+//         lastName : 'Doe',
+//         fullName :  ()=>{
+//                 console.log(this)
+//                 return this.firstName+' '+ this.lastName
+//         }
+// }
+
+// console.log(obj.fullName())
+
+
+                //this keyword
+
+// 'use strict'
+// console.log(this) // window
+// function x(){
+//         console.log(this)  // undefined
+// }
+// x()
+
+
+                // call()
+
+// const obj = {
+//         details : function (city,gender){
+//                 return `${this.name} ${city} ${gender}`
+//                //  return this.name+' '+city+' '+gender
+//         }
+// }
+
+// const p1 = {
+//         name:'siva'
+// }
+
+// const res = obj.details.call(p1,'hyd','male')
+// console.log(res)
+
+
+
+// const obj = {
+//         details : function (gender,loc) {
+//                 return `${this.name} ${gender} ${loc}`
+//         }
+// }
+
+// const p1 = {
+//         name : 'siva'
+// }
+
+// const res = obj.details.call(p1,'male','hyd')
+
+// console.log(res)
+
+
+                // apply()
+
+
+// const obj = {
+//         details : function (gender) {
+//                 return `${this.name} ${gender}`
+//         }
+// }
+// const p1 = {
+//         name : 'siva'
+// }
+// const res = obj.details.apply(p1,['male'])
+// console.log(res)
+
+
+                // bind()
+
+// const obj = {
+//         details : function (loc) {
+//                 return `${this.name} ${loc}`
+//         }
+// }
+// const p1 = {
+//         name : 'raj'
+// }
+// const res = obj.details.bind(p1,'bangaluru') // it will return an functions
+// console.log(res())
+
+
+                //closures
+
+
+function outerfn(){
+        let x = 10;
+        function innerfn(){
+                return x
+        }
+        return innerfn
+}
+
+let gv = outerfn()
+console.log(gv)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// siddu.s@algofusiontech.com
+
