@@ -122,19 +122,30 @@
 // console.log(res())
 
 
+// const obj = {
+//         details : function(loc){
+//                 console.log(this.name,this.age,loc)
+//         }
+// }
+// const p1 = {
+//         name: 'revi',
+//         age : 34
+// }
+// obj.details.call(p1,'hyd')
+
                 //closures
 
 
-function outerfn(){
-        let x = 10;
-        function innerfn(){
-                return x
-        }
-        return innerfn
-}
+// function outerfn(){
+//         let x = 10;
+//         function innerfn(){
+//                 return x
+//         }
+//         return innerfn
+// }
 
-let gv = outerfn()
-console.log(gv)
+// let gv = outerfn()
+// console.log(gv)
 
 
 

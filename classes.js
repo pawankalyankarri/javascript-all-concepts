@@ -87,39 +87,39 @@
                 // get and set methods
 
 
-class Human{
-    constructor (n,a,g){
-        this.name = n;
-        this.age = a;
-        this.gender = g;
-    }
-    details (){
-        return `${this.name}`
-    }
-}
+// class Human{
+//     constructor (n,a,g){
+//         this.name = n;
+//         this.age = a;
+//         this.gender = g;
+//     }
+//     details (){
+//         return `${this.name}`
+//     }
+// }
 
-class Employee extends Human{
-    constructor (n,a,g,eid){
-        super(n,a,g)
-        this.eid = eid
-    }
-    info(){
-        console.log(this.name,this.age,this.gender,this.eid)
-    }
-    get getage(){
-        console.log(this.age)
-    }
-    set setage(na){
-        this.age = na
-    }
-}
+// class Employee extends Human{
+//     constructor (n,a,g,eid){
+//         super(n,a,g)
+//         this.eid = eid
+//     }
+//     info(){
+//         console.log(this.name,this.age,this.gender,this.eid)
+//     }
+//     get getage(){
+//         console.log(this.age)
+//     }
+//     set setage(na){
+//         this.age = na
+//     }
+// }
 
-const p = new Employee('raj',31,'male',5)
-// console.log(p.details())
-// p.info()
+// const p = new Employee('raj',31,'male',5)
+// // console.log(p.details())
+// // p.info()
+// // p.getage
+// p.setage = 22
 // p.getage
-p.setage = 22
-p.getage
 
 
 
