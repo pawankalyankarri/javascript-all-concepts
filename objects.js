@@ -116,3 +116,5 @@
 // console.log(p1.loc)
 // console.log(Object.entries(p1))
 
+// let data = JSON.parse(localStorage.getItem('obj'))
+// console.log(data)
