@@ -20,7 +20,40 @@ function report(arr){
     })
     console.log(maxsal)
 
+    let avgdepts = {}
+    let depts = []
+    arr.forEach((obj)=>{
+        if (Object.keys(avgdepts).includes(obj.department)){
+            avgdepts[obj.department] += obj.salary
+            avgdepts[`${obj.department}cnt`] += 1
+        }else{
+            depts.push(obj.department)
+            avgdepts[obj.department] = obj.salary
+            avgdepts[`${obj.department}cnt`] = 1
+        }
+    })
+    for(let d of depts){
+        avgdepts[d] = avgdepts[d]/avgdepts[`${d}cnt`]
+    }
+    console.log(avgdepts)
 
+
+    let totalavgsal = arr.reduce((acc,obj)=>acc+obj.salary,0)/arr.length
+    let res = arr.filter(obj=>obj.salary>totalavgsal)
+    console.log(res)
+
+
+    console.log(avgdepts)
+    let highpayroll = 0
+    let highpayrolldept = ''
+    for(let d of depts){
+        if (avgdepts[d] >= highpayroll){ 
+            highpayroll = avgdepts[d]
+            highpayrolldept = d
+            
+        }
+    }
+    console.log(highpayrolldept,'=>',highpayroll)
     
 }
 

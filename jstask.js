@@ -82,7 +82,13 @@ function analytics(arr){
     
 
     let belo500 = arr.some(obj=>obj.category === 'Electronics' && obj.price<500)
+    let below500obj = arr.map(obj=>{
+        obj['below500'] = obj.category === 'Electronics' && obj.price<500
+        return obj
+        
+    })
     console.log(belo500)
+    console.log(below500obj)
 
 }
 
@@ -93,7 +99,7 @@ let products = [
   { name: "Desk", category: "Furniture", price: 300, inStock: true }
 ];
 
-// analytics(products)
+analytics(products)
 
 
 function analyze(st){
